@@ -5,6 +5,7 @@ end
 
 require("meleu.configs.options")
 require("meleu.configs.keymaps")
+require("meleu.configs.autocommands")
 
 -- use Lazy.nvim as the plugin manager
 require("meleu.configs.lazy")
