@@ -1,3 +1,6 @@
+-- set to true if you have nerd fonts
+vim.g.have_nerd_font = true
+
 -- load my old ~/.vimrc (if it exists)
 if vim.fn.filereadable("~/.vimrc") then
   vim.cmd("source ~/.vimrc")
