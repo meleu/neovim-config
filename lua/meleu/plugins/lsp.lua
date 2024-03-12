@@ -1,4 +1,4 @@
-  -- LSP Configuration & Plugins
+-- LSP Configuration & Plugins
 -- NOTE: nvim-cmp must be installed, otherwise the config will break in the
 -- `require('cmp_nvim_lsp')
 
@@ -206,4 +206,3 @@ return {
     })
   end,
 }
-
