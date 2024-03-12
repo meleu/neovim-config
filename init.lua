@@ -4,6 +4,7 @@ if vim.fn.filereadable("~/.vimrc") then
 end
 
 require("meleu.configs.options")
+require("meleu.configs.keymaps")
 
 -- use Lazy.nvim as the plugin manager
 require("meleu.configs.lazy")
