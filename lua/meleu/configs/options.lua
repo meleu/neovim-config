@@ -1,13 +1,13 @@
 -- Sync clipboard between OS and Neovim.
 --  See `:help 'clipboard'`
-vim.opt.clipboard = 'unnamedplus'
+vim.opt.clipboard = "unnamedplus"
 
 -- Don't show the mode, since it's already in status line
 vim.opt.showmode = false
 
 -- Keep signcolumn on by default
 -- NOTE: I didn't understand this option (even after reading the :help)
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = "yes"
 
 -- Decrease update time
 vim.opt.updatetime = 2500
@@ -19,6 +19,4 @@ vim.opt.timeoutlen = 300
 --  See `:help 'list'`
 --  and `:help 'listchars'`
 vim.opt.list = true
-vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
-
-
+vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }

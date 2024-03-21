@@ -1,7 +1,15 @@
 --  See `:help vim.keymap.set()`
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
-vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+vim.keymap.set("n", "<esc>", ":nohlsearch<cr>")
+
+-- buffer navigation
+vim.keymap.set("n", "]b", ":bnext<cr>", { desc = "Next buffer" })
+vim.keymap.set("n", "[b", ":bprevious<cr>", { desc = "Previous buffer" })
+
+-- I'm not really sure about this, but using to keep consistency with my VSCode usage
+vim.keymap.set("n", "gt", ":bnext<cr>", { desc = "Next buffer" })
+vim.keymap.set("n", "gT", ":bprevious<cr>", { desc = "Previous buffer" })
 
 -- Diagnostic keymaps
 -- NOTE: only works properly when LSP is properly configured
