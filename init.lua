@@ -11,4 +11,4 @@ require("meleu.configs.autocommands")
 vim.g.have_nerd_font = true
 
 -- using Lazy.nvim as the plugin manager
-require("meleu.configs.lazy")
+require("meleu.lazy")
