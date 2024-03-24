@@ -12,9 +12,11 @@ return {
   -- C-a/C-x to increase/decrease dates
   "tpope/vim-speeddating",
 
+  -- GitHub Copilot
+  "github/copilot.vim",
+
   -- Use `opts = {}` to force a plugin to be loaded.
   -- This is equivalent to: `require('Comment').setup({})`
-
   -- "gc" to comment visual regions/lines
   { "numToStr/Comment.nvim", opts = {} },
 }

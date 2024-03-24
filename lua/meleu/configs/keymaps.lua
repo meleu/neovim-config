@@ -1,7 +1,7 @@
 --  See `:help vim.keymap.set()`
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
-vim.keymap.set("n", "<esc>", ":nohlsearch<cr>")
+-- vim.keymap.set("n", "<esc>", ":nohlsearch<cr>")
 
 -- buffer navigation
 vim.keymap.set("n", "]b", ":bnext<cr>", { desc = "Next buffer" })
@@ -25,3 +25,7 @@ vim.keymap.set("n", "<leader>dq", vim.diagnostic.setloclist, { desc = "Open diag
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+
+-- disable github copilot with <leader>cc
+vim.keymap.set("n", "<leader>cd", ":Copilot disable<cr>", { desc = "GitHub [C]opilot [D]isable" })
+vim.keymap.set("n", "<leader>ce", ":Copilot enable<cr>", { desc = "GitHub [C]opilot [E]nable" })
