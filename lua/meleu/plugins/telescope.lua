@@ -107,5 +107,10 @@ return {
     vim.keymap.set("n", "<leader>fv", function()
       builtin.find_files({ cwd = vim.fn.stdpath("config") })
     end, { desc = "[F]ind neo[V]im files" })
+
+    -- Shortcut for searching your neovim configuration files
+    vim.keymap.set("n", "<leader>fo", function()
+      builtin.find_files({ cwd = vim.fn.expand("~") .. "/src/github/meleudotdev/" })
+    end, { desc = "[F]ind [O]bsidian files" })
   end,
 }

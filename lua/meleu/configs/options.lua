@@ -20,3 +20,7 @@ vim.opt.timeoutlen = 300
 --  and `:help 'listchars'`
 vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+
+-- config used by obsidian.nvim
+-- https://github.com/epwalsh/obsidian.nvim#concealing-characters
+vim.opt.conceallevel = 1
